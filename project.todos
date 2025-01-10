@@ -1,0 +1,104 @@
+# AFEB Website Project Tasks
+
+## Phase 1: Project Setup & Infrastructure
+- [x] Next.js project setup with TypeScript
+- [x] Sanity CMS integration
+- [x] UI components setup (shadcn/ui)
+- [ ] i18n setup
+  - [ ] Create language switcher component
+  - [ ] Configure Next.js internationalization
+  - [ ] Setup French as default language
+  - [ ] Create language-specific routes (/en/...)
+
+## Phase 2: Sanity Schema Development
+- [ ] Create/update schemas:
+  - [x] Settings (existing)
+  - [x] Blog Posts (existing)
+  - [ ] Events
+    - [ ] Title, date, location, description
+    - [ ] Event type (training, conference, etc.)
+    - [ ] Registration link
+  - [ ] Team Members
+    - [ ] Name, role, bio, image
+  - [ ] Testimonials
+    - [ ] Quote, author, role, image
+  - [ ] Activities/Programs
+    - [ ] Title, description, benefits
+    - [ ] Program type (training, networking, etc.)
+  - [ ] Values
+    - [ ] Title, description, icon
+  - [ ] Impact Metrics
+    - [ ] Statistic, description, icon
+
+## Phase 3: Component Development
+- [ ] Layout Components
+  - [x] Navbar with language switcher
+  - [x] Footer with newsletter
+  - [ ] SEO component for meta tags
+- [ ] Home Page Components
+  - [ ] Hero section with CTA
+  - [ ] Mission statement
+  - [ ] Key highlights grid
+  - [ ] Events preview
+  - [ ] Testimonials slider
+- [ ] Shared Components
+  - [ ] Event card
+  - [ ] Testimonial card
+  - [ ] Program card
+  - [ ] Value card
+  - [ ] Metric card
+  - [ ] HubSpot form wrapper
+
+## Phase 4: Page Development
+- [ ] Home Page (/)
+- [ ] About Us (/about)
+- [ ] Activities (/activities)
+- [ ] Events (/events)
+  - [ ] Events listing
+  - [ ] Event detail page
+- [ ] Blog (/blog)
+  - [x] Blog listing
+  - [x] Blog post page
+- [ ] Contact (/contact)
+
+## Phase 5: Forms & Integration
+- [ ] Setup HubSpot forms:
+  - [x] Newsletter subscription
+  - [ ] Contact form
+  - [ ] Event registration
+  - [ ] General inquiry
+
+## Phase 6: Internationalization
+- [ ] Content Translation
+  - [ ] Setup translation structure in Sanity
+  - [ ] Implement language fields in schemas
+  - [ ] Create language versions of static content
+- [ ] UI Translation
+  - [ ] Create translation files for UI elements
+  - [ ] Implement language switching logic
+  - [ ] SEO optimization for both languages
+
+## Phase 7: Animation & Polish
+- [ ] Implement Framer Motion animations:
+  - [ ] Page transitions
+  - [ ] Scroll animations
+  - [ ] Component mount animations
+  - [ ] Hover effects
+- [ ] Loading states
+- [ ] Error states
+- [ ] 404 page
+- [ ] Success/error messages for forms
+
+## Phase 8: Testing & Optimization
+- [ ] Cross-browser testing
+- [ ] Mobile responsiveness
+- [ ] Image optimization
+- [ ] Performance testing
+- [ ] SEO optimization
+- [ ] Accessibility audit
+
+## Phase 9: Deployment & Documentation
+- [ ] Environment configuration
+- [ ] Deployment setup
+- [ ] Content management documentation
+- [ ] Technical documentation 
