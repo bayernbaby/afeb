@@ -1,9 +1,8 @@
 export const NAVIGATION = [
-    { label: 'Link', href: '/' },
-    { label: 'Link', href: '/' },
-    { label: 'Link', href: '/' },
-    { label: 'Link', href: '/' },
-    { label: 'Link', href: '/' },
+    { label: 'about', href: '/about' },
+    { label: 'activities', href: '/activities' },
+    { label: 'events', href: '/events' },
+    { label: 'contact', href: '/contact' },
 ] as const;
 
 export const SOCIAL_LINKS = [

@@ -4,31 +4,25 @@ import * as React from 'react';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useOverlayMenu } from '@/hooks/useOverlayMenu';
+import { LanguageSwitcher } from '@/components/LanguageSwitcher';
+import { useTranslation } from '@/lib/i18n';
+import { NAVIGATION } from '@/lib/constants';
 
 export function Navbar() {
   const { isOpen, toggle } = useOverlayMenu();
   const [hasScrolled, setHasScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const lastScrollY = React.useRef(0);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-
-      // Update background
       setHasScrolled(currentScrollY > 0);
 
-      // Only hide navbar on desktop
-      if (window.innerWidth >= 768) { // 768px is the 'md' breakpoint in Tailwind
-        if (currentScrollY > lastScrollY.current) {
-          // Scrolling down
-          setIsVisible(false);
-        } else {
-          // Scrolling up
-          setIsVisible(true);
-        }
+      if (window.innerWidth >= 768) {
+        setIsVisible(currentScrollY <= lastScrollY.current);
       } else {
-        // Always visible on mobile
         setIsVisible(true);
       }
 
@@ -50,25 +44,30 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-6 uppercase text-xs font-medium">
-          <Link href="/" className="hover:text-primary">
-            Link
-          </Link>
-          <Link href="/" className="hover:text-primary">
-            Link
-          </Link>
-          <Link href="/" className="hover:text-primary">
-            Link
-          </Link>
-          <Link href="/" className="hover:text-primary">
-            Link
-          </Link>
+        <div className="hidden md:flex items-center space-x-6">
+          <nav className="flex items-center space-x-6 uppercase text-xs font-medium">
+            {NAVIGATION.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="hover:text-primary"
+              >
+                {t(`nav.${item.label}`)}
+              </Link>
+            ))}
+          </nav>
+          <LanguageSwitcher />
         </div>
 
-        {/* Mobile Menu Button */}
-        <button className="md:hidden px-4 py-2 border border-black/20 rounded-full bg-white" onClick={toggle}>
-          MENU
-        </button>
+        {/* Mobile Menu */}
+        <div className="md:hidden flex items-center space-x-4">
+          <button
+            className="px-4 py-2 border border-black/20 rounded-full bg-white"
+            onClick={toggle}
+          >
+            MENU
+          </button>
+        </div>
       </div>
     </div>
   );
