@@ -1,46 +1,28 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
-const locales = ['en', 'fr']
-const defaultLocale = 'fr'
-
-// Simplified public file check
-function isPublicFile(pathname: string): boolean {
-    return pathname.includes('.')  // This will match .js, .ico, .png etc.
-}
-
 export function middleware(request: NextRequest) {
-    const pathname = request.nextUrl.pathname
+    const { pathname } = request.nextUrl
 
-    // Immediately skip all files (not pages)
-    if (isPublicFile(pathname)) {
+    // Skip files and special routes
+    if (pathname.includes('.') || pathname.startsWith('/_next') || pathname.startsWith('/editor')) {
         return NextResponse.next()
     }
 
-    // If path starts with /fr, redirect to root path
+    // If user visits /fr, redirect to /
     if (pathname.startsWith('/fr')) {
-        return NextResponse.redirect(
-            new URL(pathname.replace(/^\/fr/, '') || '/', request.url)
-        )
+        const url = request.nextUrl.clone()
+        url.pathname = pathname.replace(/^\/fr/, '')
+        return NextResponse.redirect(url)
     }
 
-    // If we're on an English path or root path, continue
-    if (pathname.startsWith('/en') || pathname === '/') {
-        return NextResponse.next()
-    }
-
-    // For all other paths without a locale, treat as French (root path)
+    // For all other paths, just continue
     return NextResponse.next()
 }
 
 export const config = {
     matcher: [
-        /*
-         * Match all request paths except for:
-         * 1. /api/ routes
-         * 2. /_next/ (Next.js internals)
-         * 3. /.* (files in public directory)
-         */
-        '/((?!api|_next|.*\\.[^/]*$).*)'
+        // Match all paths except api, _next, and files with extensions
+        '/((?!api|_next|.*\\.[^/]*$).*)',
     ],
 } 

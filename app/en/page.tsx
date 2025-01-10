@@ -1,5 +1,17 @@
 import { TranslatedContent } from '@/components/TranslatedContent'
 import { Wrapper } from '@/components/layout'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Home',
+    alternates: {
+        canonical: '/en',
+        languages: {
+            'en': '/en',
+            'fr': '/'
+        }
+    }
+}
 
 export default function Home() {
     return (
