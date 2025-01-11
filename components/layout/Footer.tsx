@@ -2,8 +2,10 @@ import Link from 'next/link';
 import { NewsletterForm } from '@/components/forms/NewsletterForm';
 import { HubspotNewsletterAction } from '@/lib/hubspot/forms/action';
 import { NAVIGATION, SOCIAL_LINKS } from '@/lib/constants';
-export function Footer() {
+import { useTranslation } from '@/lib/i18n';
 
+export function Footer() {
+  const { t } = useTranslation();
 
   return (
     <footer className="relative z-0 bg-[#fff] border-t border-black/20 text-black">
@@ -14,14 +16,14 @@ export function Footer() {
             LOGO
           </h2>
           <div className="mt-4 space-y-4 max-w-sm">
-            <h3 className="font-medium uppercase">Newsletter</h3>
+            <h3 className="font-medium uppercase">{t('footer.newsletter')}</h3>
             <NewsletterForm formAction={HubspotNewsletterAction} />
           </div>
         </div>
         {/* Updated Links Section */}
         <div className="flex flex-col sm:flex-row gap-8 sm:gap-32 w-full md:w-auto">
           <div className="flex flex-col gap-y-4">
-            <h3 className="font-medium uppercase">Links</h3>
+            <h3 className="font-medium uppercase">{t('footer.links')}</h3>
             <div className="flex flex-col gap-y-2 text-sm">
               {NAVIGATION.map((item) => (
                 <Link
@@ -29,14 +31,14 @@ export function Footer() {
                   href={item.href}
                   className="hover:opacity-70 transition-opacity"
                 >
-                  {item.label}
+                  {t(`nav.${item.label}`)}
                 </Link>
               ))}
             </div>
           </div>
 
           <div className="flex flex-col gap-y-4">
-            <h3 className="font-medium uppercase">Social Media</h3>
+            <h3 className="font-medium uppercase">{t('footer.social')}</h3>
             <div className="flex flex-col gap-y-2 text-sm">
               {SOCIAL_LINKS.map((item) => (
                 <Link
@@ -44,7 +46,7 @@ export function Footer() {
                   href={item.href}
                   className="hover:opacity-70 transition-opacity"
                 >
-                  {item.label}
+                  {t(`social.${item.label}`)}
                 </Link>
               ))}
             </div>

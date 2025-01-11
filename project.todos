@@ -4,31 +4,31 @@
 - [x] Next.js project setup with TypeScript
 - [x] Sanity CMS integration
 - [x] UI components setup (shadcn/ui)
-- [ ] i18n setup
-  - [ ] Create language switcher component
-  - [ ] Configure Next.js internationalization
-  - [ ] Setup French as default language
-  - [ ] Create language-specific routes (/en/...)
+- [x] i18n setup
+  - [x] Create language switcher component
+  - [x] Configure Next.js internationalization
+  - [x] Setup French as default language
+  - [x] Create language-specific routes (/en/...)
 
 ## Phase 2: Sanity Schema Development
-- [ ] Create/update schemas:
+- [x] Create/update schemas:
   - [x] Settings (existing)
   - [x] Blog Posts (existing)
-  - [ ] Events
-    - [ ] Title, date, location, description
-    - [ ] Event type (training, conference, etc.)
-    - [ ] Registration link
-  - [ ] Team Members
-    - [ ] Name, role, bio, image
-  - [ ] Testimonials
-    - [ ] Quote, author, role, image
-  - [ ] Activities/Programs
-    - [ ] Title, description, benefits
-    - [ ] Program type (training, networking, etc.)
-  - [ ] Values
-    - [ ] Title, description, icon
-  - [ ] Impact Metrics
-    - [ ] Statistic, description, icon
+  - [x] Events
+    - [x] Title, date, location, description
+    - [x] Event type (training, conference, etc.)
+    - [x] Registration link
+  - [x] Team Members
+    - [x] Name, role, bio, image
+  - [x] Testimonials
+    - [x] Quote, author, role, image
+  - [x] Activities/Programs
+    - [x] Title, description, benefits
+    - [x] Program type (training, networking, etc.)
+  - [x] Values
+    - [x] Title, description, icon
+  - [x] Impact Metrics
+    - [x] Statistic, description, icon
 
 ## Phase 3: Component Development
 - [ ] Layout Components
