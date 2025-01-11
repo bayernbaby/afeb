@@ -31,7 +31,7 @@
     - [x] Statistic, description, icon
 
 ## Phase 3: Component Development
-- [ ] Layout Components
+- [x] Layout Components
   - [x] Navbar with language switcher
   - [x] Footer with newsletter
   - [ ] SEO component for meta tags
