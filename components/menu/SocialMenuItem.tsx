@@ -5,7 +5,7 @@ import { menuItemVariants } from './MenuItem';
 interface SocialMenuItemProps {
     title: string;
     href: string;
-    handle: string;
+    handle?: string;
     onClose: () => void;
 }
 
