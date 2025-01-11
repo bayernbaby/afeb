@@ -35,12 +35,12 @@
   - [x] Navbar with language switcher
   - [x] Footer with newsletter
   - [x] SEO component for meta tags
-- [ ] Home Page Components
+- [x] Home Page Components
   - [x] Hero section with CTA
-  - [ ] Mission statement
-  - [ ] Key highlights grid
-  - [ ] Events preview
-  - [ ] Testimonials slider
+  - [x] Mission statement
+  - [x] Key highlights grid
+  - [x] Events preview
+  - [x] Testimonials slider
 - [ ] Shared Components
   - [ ] Event card
   - [ ] Testimonial card
@@ -50,7 +50,7 @@
   - [ ] HubSpot form wrapper
 
 ## Phase 4: Page Development
-- [ ] Home Page (/)
+- [x] Home Page (/)
 - [ ] About Us (/about)
 - [ ] Activities (/activities)
 - [ ] Events (/events)

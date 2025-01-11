@@ -2,11 +2,12 @@
 
 import { useTranslation } from '@/lib/i18n'
 import { Button } from '@/components/ui/button'
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card'
-import { CalendarDays } from 'lucide-react'
+import { EventCard } from '@/components/cards/EventCard'
 import Link from 'next/link'
 import { localizedUrl } from '@/lib/i18n'
 import type { Language } from '@/translations'
+
+const PREVIEW_EVENTS = [0, 1, 2]
 
 export function EventsPreview() {
     const { t, locale } = useTranslation()
@@ -31,28 +32,17 @@ export function EventsPreview() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {[...Array(3)].map((_, i) => (
-                        <Card key={i}>
-                            <CardHeader>
-                                <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
-                                    <CalendarDays className="h-4 w-4" />
-                                    {t(`home.events.items.${i}.date`)}
-                                </div>
-                                <CardTitle className="mb-2">
-                                    {t(`home.events.items.${i}.title`)}
-                                </CardTitle>
-                                <CardDescription>
-                                    {t(`home.events.items.${i}.description`)}
-                                </CardDescription>
-                            </CardHeader>
-                            <CardFooter>
-                                <Button variant="link" asChild className="px-0">
-                                    <Link href={localizedUrl(`/events/${i}`, locale as Language)}>
-                                        {t('common.learnMore')} →
-                                    </Link>
-                                </Button>
-                            </CardFooter>
-                        </Card>
+                    {PREVIEW_EVENTS.map((i) => (
+                        <EventCard
+                            key={i}
+                            id={`preview-${i}`}
+                            title={t(`home.events.items.${i}.title`)}
+                            description={t(`home.events.items.${i}.description`)}
+                            date={t(`home.events.items.${i}.date`)}
+                            location={t(`home.events.items.${i}.location`)}
+                            type={t(`home.events.items.${i}.type`)}
+                            locale={locale as Language}
+                        />
                     ))}
                 </div>
             </div>

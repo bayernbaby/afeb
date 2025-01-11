@@ -54,17 +54,23 @@ export const fr = {
                 {
                     date: '15 Mai 2024',
                     title: 'Formation Tactique Avancée',
-                    description: 'Une journée intensive sur les stratégies modernes du basketball'
+                    description: 'Une journée intensive sur les stratégies modernes du basketball',
+                    location: 'Bamako',
+                    type: 'Formation'
                 },
                 {
                     date: '22 Mai 2024',
                     title: 'Atelier de Leadership',
-                    description: 'Développez vos compétences en leadership et gestion d\'équipe'
+                    description: 'Développez vos compétences en leadership et gestion d\'équipe',
+                    location: 'Sikasso',
+                    type: 'Atelier'
                 },
                 {
                     date: '1 Juin 2024',
                     title: 'Conférence Annuelle',
-                    description: 'Rencontrez des experts et partagez vos expériences'
+                    description: 'Rencontrez des experts et partagez vos expériences',
+                    location: 'Bamako',
+                    type: 'Conférence'
                 }
             ]
         },
