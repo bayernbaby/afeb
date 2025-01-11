@@ -1,9 +1,9 @@
 import { en } from './en'
 import { fr } from './fr'
 
-export const translations = {
-    en,
-    fr,
-} as const
+export type Language = 'en' | 'fr'
 
-export type Language = keyof typeof translations 
+export const translations = {
+    fr,
+    en
+} as const 

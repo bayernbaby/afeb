@@ -19,7 +19,11 @@ export const fr = {
         hero: {
             title: 'Autonomiser les entraîneurs de basketball pour un avenir meilleur au Mali',
             subtitle: 'Formation, réseautage et soutien pour les entraîneurs de basketball',
-        },
+            cta: {
+                primary: 'Contactez-nous',
+                secondary: 'En savoir plus'
+            }
+        }
     },
     footer: {
         newsletter: {

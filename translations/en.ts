@@ -19,7 +19,11 @@ export const en = {
         hero: {
             title: 'Empowering Basketball Coaches for a Brighter Future in Mali',
             subtitle: 'Training, networking, and support for basketball coaches',
-        },
+            cta: {
+                primary: 'Contact Us',
+                secondary: 'Learn More'
+            }
+        }
     },
     footer: {
         newsletter: {

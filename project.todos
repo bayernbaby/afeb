@@ -34,7 +34,7 @@
 - [x] Layout Components
   - [x] Navbar with language switcher
   - [x] Footer with newsletter
-  - [ ] SEO component for meta tags
+  - [x] SEO component for meta tags
 - [ ] Home Page Components
   - [ ] Hero section with CTA
   - [ ] Mission statement
