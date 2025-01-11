@@ -98,4 +98,27 @@ export const en = {
             success: 'Thanks for subscribing!',
         },
     },
+    about: {
+        hero: {
+            title: 'Our Story and Mission',
+            subtitle: 'Building a better future for basketball in Mali through coach training and support.'
+        },
+        mission: {
+            title: 'Our Mission',
+            description: 'AFEB is committed to developing and supporting basketball coaches in Mali, creating a strong network of qualified professionals who inspire the next generation of athletes.',
+            vision: 'Our vision is to become the reference in basketball coach training and development in West Africa.'
+        },
+        values: {
+            title: 'Our Values',
+            subtitle: 'The principles that guide our actions and commitment'
+        },
+        impact: {
+            title: 'Our Impact',
+            subtitle: 'Concrete results transforming basketball in Mali'
+        },
+        team: {
+            title: 'Our Team',
+            subtitle: 'The passionate people driving our mission forward'
+        }
+    }
 } 

@@ -4,41 +4,29 @@ export const metric = {
     type: 'document',
     fields: [
         {
-            name: 'title',
-            title: 'Title',
+            name: 'label',
+            title: 'Label',
             type: 'object',
             fields: [
                 {
                     name: 'fr',
                     title: 'French',
                     type: 'string',
-                    validation: (Rule: any) => Rule.required(),
+                    validation: (Rule: any) => Rule.required()
                 },
                 {
                     name: 'en',
                     title: 'English',
                     type: 'string',
-                    validation: (Rule: any) => Rule.required(),
-                },
-            ],
+                    validation: (Rule: any) => Rule.required()
+                }
+            ]
         },
         {
             name: 'value',
             title: 'Value',
             type: 'number',
-            validation: (Rule: any) => Rule.required(),
-        },
-        {
-            name: 'prefix',
-            title: 'Prefix',
-            type: 'string',
-            description: 'Text to show before the number (e.g., "+")',
-        },
-        {
-            name: 'suffix',
-            title: 'Suffix',
-            type: 'string',
-            description: 'Text to show after the number (e.g., "%", "k")',
+            validation: (Rule: any) => Rule.required()
         },
         {
             name: 'description',
@@ -48,40 +36,47 @@ export const metric = {
                 {
                     name: 'fr',
                     title: 'French',
-                    type: 'text',
+                    type: 'text'
                 },
                 {
                     name: 'en',
                     title: 'English',
-                    type: 'text',
-                },
-            ],
+                    type: 'text'
+                }
+            ]
         },
         {
-            name: 'icon',
-            title: 'Icon',
+            name: 'prefix',
+            title: 'Prefix',
             type: 'string',
-            description: 'Enter the Lucide icon name (e.g., "users", "trophy")',
+            description: 'E.g., "$" or "+"'
+        },
+        {
+            name: 'suffix',
+            title: 'Suffix',
+            type: 'string',
+            description: 'E.g., "%" or "k"'
         },
         {
             name: 'order',
             title: 'Display Order',
             type: 'number',
-            description: 'Use this to control the order of metrics (lower numbers appear first)',
-        },
+            validation: (Rule: any) => Rule.required()
+        }
+    ],
+    orderings: [
+        {
+            title: 'Display Order',
+            name: 'orderAsc',
+            by: [
+                { field: 'order', direction: 'asc' }
+            ]
+        }
     ],
     preview: {
         select: {
-            title: 'title.fr',
-            value: 'value',
-            prefix: 'prefix',
-            suffix: 'suffix',
-        },
-        prepare({ title, value, prefix = '', suffix = '' }: any) {
-            return {
-                title,
-                subtitle: `${prefix}${value}${suffix}`,
-            }
-        },
-    },
+            title: 'label.fr',
+            subtitle: 'value'
+        }
+    }
 } 

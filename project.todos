@@ -41,13 +41,13 @@
   - [x] Key highlights grid
   - [x] Events preview
   - [x] Testimonials slider
-- [ ] Shared Components
-  - [ ] Event card
-  - [ ] Testimonial card
-  - [ ] Program card
-  - [ ] Value card
-  - [ ] Metric card
-  - [ ] HubSpot form wrapper
+- [x] Shared Components
+  - [x] Event card
+  - [x] Testimonial card
+  - [x] Program card
+  - [x] Value card
+  - [x] Metric card
+  - [x] HubSpot form wrapper
 
 ## Phase 4: Page Development
 - [x] Home Page (/)

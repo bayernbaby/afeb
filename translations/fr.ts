@@ -104,4 +104,27 @@ export const fr = {
             success: 'Merci de votre inscription!',
         },
     },
+    about: {
+        hero: {
+            title: 'Notre Histoire et Notre Mission',
+            subtitle: 'Construire un avenir meilleur pour le basketball au Mali à travers la formation et le soutien des entraîneurs.'
+        },
+        mission: {
+            title: 'Notre Mission',
+            description: 'AFEB s\'engage à développer et soutenir les entraîneurs de basketball au Mali, en créant un réseau solide de professionnels qualifiés qui inspirent la prochaine génération d\'athlètes.',
+            vision: 'Notre vision est de devenir la référence en matière de formation et de développement des entraîneurs de basketball en Afrique de l\'Ouest.'
+        },
+        values: {
+            title: 'Nos Valeurs',
+            subtitle: 'Les principes qui guident nos actions et notre engagement',
+        },
+        impact: {
+            title: 'Notre Impact',
+            subtitle: 'Des résultats concrets qui transforment le basketball au Mali'
+        },
+        team: {
+            title: 'Notre Équipe',
+            subtitle: 'Les personnes passionnées qui font avancer notre mission'
+        }
+    }
 } 

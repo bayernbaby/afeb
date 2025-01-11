@@ -45,14 +45,14 @@ export const team = {
                 {
                     name: 'fr',
                     title: 'French',
-                    type: 'array',
-                    of: [{ type: 'block' }],
+                    type: 'text',
+                    validation: (Rule: any) => Rule.required(),
                 },
                 {
                     name: 'en',
                     title: 'English',
-                    type: 'array',
-                    of: [{ type: 'block' }],
+                    type: 'text',
+                    validation: (Rule: any) => Rule.required(),
                 },
             ],
         },
@@ -63,59 +63,26 @@ export const team = {
             options: {
                 hotspot: true,
             },
-            fields: [
-                {
-                    name: 'alt',
-                    type: 'object',
-                    fields: [
-                        {
-                            name: 'fr',
-                            title: 'French Alt Text',
-                            type: 'string',
-                        },
-                        {
-                            name: 'en',
-                            title: 'English Alt Text',
-                            type: 'string',
-                        },
-                    ],
-                },
-            ],
+            validation: (Rule: any) => Rule.required(),
+        },
+        {
+            name: 'linkedin',
+            title: 'LinkedIn URL',
+            type: 'url',
         },
         {
             name: 'order',
             title: 'Display Order',
             type: 'number',
-            description: 'Use this to control the order of team members (lower numbers appear first)',
+            validation: (Rule: any) => Rule.required(),
         },
+    ],
+    orderings: [
         {
-            name: 'socialLinks',
-            title: 'Social Media Links',
-            type: 'array',
-            of: [
-                {
-                    type: 'object',
-                    fields: [
-                        {
-                            name: 'platform',
-                            title: 'Platform',
-                            type: 'string',
-                            options: {
-                                list: [
-                                    { title: 'LinkedIn', value: 'linkedin' },
-                                    { title: 'Twitter', value: 'twitter' },
-                                    { title: 'Instagram', value: 'instagram' },
-                                    { title: 'Facebook', value: 'facebook' },
-                                ],
-                            },
-                        },
-                        {
-                            name: 'url',
-                            title: 'URL',
-                            type: 'url',
-                        },
-                    ],
-                },
+            title: 'Display Order',
+            name: 'orderAsc',
+            by: [
+                { field: 'order', direction: 'asc' },
             ],
         },
     ],
