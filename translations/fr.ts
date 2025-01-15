@@ -179,5 +179,30 @@ export const fr = {
             backToEvents: 'Retour aux événements',
             register: 'S\'inscrire à l\'événement'
         }
+    },
+    contact: {
+        hero: {
+            title: 'Contactez-nous',
+            subtitle: 'Nous sommes là pour répondre à vos questions et vous accompagner dans votre parcours.'
+        },
+        form: {
+            firstName: 'Prénom',
+            lastName: 'Nom',
+            email: 'Email',
+            phone: 'Téléphone (optionnel)',
+            subject: 'Sujet',
+            selectSubject: 'Sélectionnez un sujet',
+            subjects: {
+                general: 'Question générale',
+                program: 'Programmes de formation',
+                event: 'Événements',
+                other: 'Autre'
+            },
+            message: 'Message',
+            submit: 'Envoyer',
+            submitting: 'Envoi en cours...',
+            success: 'Votre message a été envoyé avec succès !',
+            error: 'Une erreur est survenue. Veuillez réessayer.'
+        }
     }
 } 

@@ -173,5 +173,30 @@ export const en = {
             backToEvents: 'Back to events',
             register: 'Register for event'
         }
+    },
+    contact: {
+        hero: {
+            title: 'Contact Us',
+            subtitle: 'We\'re here to answer your questions and support you on your journey.'
+        },
+        form: {
+            firstName: 'First Name',
+            lastName: 'Last Name',
+            email: 'Email',
+            phone: 'Phone (optional)',
+            subject: 'Subject',
+            selectSubject: 'Select a subject',
+            subjects: {
+                general: 'General Inquiry',
+                program: 'Training Programs',
+                event: 'Events',
+                other: 'Other'
+            },
+            message: 'Message',
+            submit: 'Send Message',
+            submitting: 'Sending...',
+            success: 'Your message has been sent successfully!',
+            error: 'An error occurred. Please try again.'
+        }
     }
 } 
