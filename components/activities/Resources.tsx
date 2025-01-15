@@ -4,7 +4,7 @@ import { useTranslation } from '@/lib/i18n'
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Video, FileText, Newspaper, Edit } from 'lucide-react'
-import Link from 'next/link'
+import { Link } from '@/components/ui/link'
 import Image from 'next/image'
 import type { Language } from '@/translations'
 

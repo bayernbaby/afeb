@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
+import { Link } from '@/components/ui/link';
 import { useOverlayMenu } from '@/hooks/useOverlayMenu';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 import { useTranslation } from '@/lib/i18n';

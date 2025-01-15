@@ -4,7 +4,7 @@ import { useTranslation } from '@/lib/i18n'
 import Image from 'next/image'
 import { Card, CardHeader, CardContent } from '@/components/ui/card'
 import { LinkedinIcon } from 'lucide-react'
-import Link from 'next/link'
+import { Link } from '@/components/ui/link'
 
 interface TeamProps {
     members: {

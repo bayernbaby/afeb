@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from '@/components/ui/link';
 import { format, parseISO } from 'date-fns';
 import { urlForImage } from '@/sanity/lib/image';
 import { Post } from '@/types/post'

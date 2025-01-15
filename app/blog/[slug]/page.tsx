@@ -8,7 +8,7 @@ import { Wrapper } from '@/components/wrapper';
 import { PortableText } from '@portabletext/react';
 import { RecentPostCard } from '@/components/RecentPostCard';
 import { Post } from '@/types/post'
-import Link from 'next/link';
+import { Link } from '@/components/ui/link';
 import { H1, H2, H3, P } from '@/components/ui/typography';
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {

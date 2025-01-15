@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/components/ui/link';
 import { NewsletterForm } from '@/components/forms/NewsletterForm';
 import { HubspotNewsletterAction } from '@/lib/hubspot/forms/action';
 import { NAVIGATION, SOCIAL_LINKS } from '@/lib/constants';

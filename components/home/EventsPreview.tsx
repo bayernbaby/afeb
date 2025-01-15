@@ -3,7 +3,7 @@
 import { useTranslation } from '@/lib/i18n'
 import { Button } from '@/components/ui/button'
 import { EventCard } from '@/components/cards/EventCard'
-import Link from 'next/link'
+import { Link } from '@/components/ui/link'
 import { localizedUrl } from '@/lib/i18n'
 import type { Language } from '@/translations'
 

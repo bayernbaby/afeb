@@ -3,7 +3,7 @@
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { CalendarDays, MapPin } from 'lucide-react'
-import Link from 'next/link'
+import { Link } from '@/components/ui/link'
 import { localizedUrl } from '@/lib/i18n'
 import type { Language } from '@/translations'
 

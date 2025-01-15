@@ -2,7 +2,7 @@
 
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import Link from 'next/link'
+import { Link } from '@/components/ui/link'
 import { localizedUrl } from '@/lib/i18n'
 import type { Language } from '@/translations'
 import Image from 'next/image'
