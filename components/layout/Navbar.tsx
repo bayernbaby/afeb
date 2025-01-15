@@ -40,7 +40,7 @@ export function Navbar() {
     >
       <div className="flex h-16 items-center px-4 md:px-6 lg:px-10 mx-auto justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <span className="text-xl font-medium">LOGO ©</span>
+          <span className="text-xl font-medium">AFEB ©</span>
         </Link>
 
         {/* Desktop Navigation */}

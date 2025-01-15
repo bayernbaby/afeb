@@ -52,10 +52,10 @@
 ## Phase 4: Page Development
 - [x] Home Page (/)
 - [x] About Us (/about)
-- [ ] Activities (/activities)
-- [ ] Events (/events)
-  - [ ] Events listing
-  - [ ] Event detail page
+- [x] Activities (/activities)
+- [x] Events (/events)
+  - [x] Events listing
+  - [x] Event detail page
 - [ ] Blog (/blog)
   - [x] Blog listing
   - [x] Blog post page

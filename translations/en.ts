@@ -120,5 +120,58 @@ export const en = {
             title: 'Our Team',
             subtitle: 'The passionate people driving our mission forward'
         }
+    },
+    activities: {
+        hero: {
+            title: 'Training Coaches, Strengthening Communities',
+            subtitle: 'Explore our training programs, events, and resources designed to elevate basketball coaching in Mali.',
+            cta: 'Discover our programs'
+        },
+        overview: {
+            title: 'What We Offer',
+            subtitle: 'A comprehensive approach to coach development',
+            sections: {
+                training: {
+                    title: 'Training Programs',
+                    description: 'Training adapted to all levels, from beginner to expert'
+                },
+                events: {
+                    title: 'Events',
+                    description: 'Conferences, workshops, and practical field sessions'
+                },
+                resources: {
+                    title: 'Resources',
+                    description: 'Tools, guides, and educational materials for your development'
+                }
+            }
+        },
+        programs: {
+            title: 'Our Training Programs',
+            subtitle: 'Pathways adapted to your level and goals',
+            types: {
+                introduction: 'Introduction',
+                advanced: 'Advanced',
+                specialization: 'Specialization'
+            }
+        },
+        resources: {
+            title: 'Resources and Tools',
+            subtitle: 'Educational materials to enrich your practice',
+            access: 'Access resource'
+        }
+    },
+    events: {
+        hero: {
+            title: 'Upcoming Events',
+            subtitle: 'Join us for enriching experiences and networking opportunities.'
+        },
+        list: {
+            title: 'Our Events',
+            subtitle: 'Explore our upcoming events and be part of unforgettable moments.'
+        },
+        detail: {
+            backToEvents: 'Back to events',
+            register: 'Register for event'
+        }
     }
 } 

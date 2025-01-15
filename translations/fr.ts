@@ -126,5 +126,58 @@ export const fr = {
             title: 'Notre Équipe',
             subtitle: 'Les personnes passionnées qui font avancer notre mission'
         }
+    },
+    activities: {
+        hero: {
+            title: 'Former les Entraîneurs, Renforcer les Communautés',
+            subtitle: 'Découvrez nos programmes de formation, événements et ressources conçus pour élever le niveau du coaching de basketball au Mali.',
+            cta: 'Découvrir nos programmes'
+        },
+        overview: {
+            title: 'Ce que nous offrons',
+            subtitle: 'Une approche complète pour le développement des entraîneurs',
+            sections: {
+                training: {
+                    title: 'Programmes de Formation',
+                    description: 'Des formations adaptées à tous les niveaux, de débutant à expert'
+                },
+                events: {
+                    title: 'Événements',
+                    description: 'Conférences, ateliers et sessions pratiques sur le terrain'
+                },
+                resources: {
+                    title: 'Ressources',
+                    description: 'Outils, guides et matériel pédagogique pour votre développement'
+                }
+            }
+        },
+        programs: {
+            title: 'Nos Programmes de Formation',
+            subtitle: 'Des parcours adaptés à votre niveau et vos objectifs',
+            types: {
+                introduction: 'Introduction',
+                advanced: 'Avancé',
+                specialization: 'Spécialisation'
+            }
+        },
+        resources: {
+            title: 'Ressources et Outils',
+            subtitle: 'Des supports pédagogiques pour enrichir votre pratique',
+            access: 'Accéder à la ressource'
+        }
+    },
+    events: {
+        hero: {
+            title: 'Événements à Venir',
+            subtitle: 'Rejoignez-nous pour des expériences enrichissantes et des opportunités de réseautage.'
+        },
+        list: {
+            title: 'Nos Événements',
+            subtitle: 'Découvrez nos événements à venir et participez à des moments inoubliables.'
+        },
+        detail: {
+            backToEvents: 'Retour aux événements',
+            register: 'S\'inscrire à l\'événement'
+        }
     }
 } 

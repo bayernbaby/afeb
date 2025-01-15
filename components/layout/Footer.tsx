@@ -13,7 +13,7 @@ export function Footer() {
       <div className="mb-2 md:mb-8 px-4 md:px-6 lg:px-10 py-16 flex flex-col md:flex-row justify-between items-start border-b border-white/20 gap-8 md:gap-0">
         <div className="flex flex-col gap-y-4">
           <h2 className="text-2xl md:text-4xl md:w-3/5 font-bold">
-            LOGO
+            AFEB
           </h2>
           <div className="mt-4 space-y-4 max-w-sm">
             <h3 className="font-medium uppercase">{t('footer.newsletter')}</h3>

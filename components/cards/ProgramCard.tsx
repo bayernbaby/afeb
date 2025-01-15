@@ -11,8 +11,9 @@ interface ProgramCardProps {
     id: string
     title: string
     description: string
+    duration: string
+    topics: string[]
     image: string
-    features: string[]
     locale: Language
 }
 

@@ -1,8 +1,8 @@
-import { defineType, defineField } from 'sanity'
+import { defineField, defineType } from 'sanity'
 
-export const event = defineType({
-    name: 'event',
-    title: 'Events',
+export const resource = defineType({
+    name: 'resource',
+    title: 'Resources',
     type: 'document',
     fields: [
         defineField({
@@ -31,43 +31,43 @@ export const event = defineType({
             ]
         }),
         defineField({
-            name: 'date',
-            title: 'Event Date',
-            type: 'datetime',
-            validation: (Rule: any) => Rule.required()
-        }),
-        defineField({
-            name: 'location',
-            title: 'Location',
-            type: 'string',
-            validation: (Rule: any) => Rule.required()
-        }),
-        defineField({
             name: 'type',
-            title: 'Event Type',
+            title: 'Resource Type',
             type: 'string',
             options: {
                 list: [
-                    { title: 'Conference', value: 'conference' },
-                    { title: 'Workshop', value: 'workshop' },
-                    { title: 'Training', value: 'training' },
-                    { title: 'Competition', value: 'competition' }
+                    { title: 'Video', value: 'video' },
+                    { title: 'Document', value: 'document' },
+                    { title: 'Article', value: 'article' },
+                    { title: 'Tool', value: 'tool' }
                 ]
             },
             validation: (Rule: any) => Rule.required()
         }),
         defineField({
-            name: 'image',
-            title: 'Event Image',
+            name: 'url',
+            title: 'Resource URL',
+            type: 'url',
+            validation: (Rule: any) => Rule.required()
+        }),
+        defineField({
+            name: 'thumbnail',
+            title: 'Thumbnail',
             type: 'image',
             options: { hotspot: true }
+        }),
+        defineField({
+            name: 'order',
+            title: 'Display Order',
+            type: 'number',
+            validation: (Rule: any) => Rule.required()
         })
     ],
     preview: {
         select: {
             title: 'title.fr',
-            subtitle: 'date',
-            media: 'image'
+            subtitle: 'type',
+            media: 'thumbnail'
         }
     }
 }) 
